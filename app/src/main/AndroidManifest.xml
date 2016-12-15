@@ -22,6 +22,7 @@
             />
         <activity android:name=".WSTimetable"
             android:exported="true"
+            android:screenOrientation="portrait"
             >
 
 
