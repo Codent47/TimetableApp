@@ -1,5 +1,6 @@
 package bits.timetable.timetableapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,12 +26,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
               if ( rbeg.isChecked() == true )
                {
-                    //go to eg page
+                   startActivity(new Intent(MainActivity.this, Timetable.class));
+                   // startActivity(new Intent(MainActivity.this, ScrollingActivityEG.class)); //go to eg page
 
                }
 
                 else if (rbws.isChecked() == true)
                 {
+                     startActivity(new Intent(MainActivity.this, WSTimetable.class));
                     //go to ws page
 
                 }
